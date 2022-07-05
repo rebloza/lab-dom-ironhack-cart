@@ -32,18 +32,16 @@ function calculateAll() {
   //... your code goes here
   const productos = document.querySelectorAll(".product")
 
-  let preciototal = 0;
-
   productos.forEach((eachProductos) => {
-    let precio = updateSubtotal(eachProductos) 
-    preciototal += precio 
+    updateSubtotal(eachProductos) 
+    
   })
    
   // ITERATION 3
   //... your code goes here
 
   const totalDOM = document.querySelector("#total-value span")
-  totalDOM.innerHTML = preciototal 
+  totalDOM.innerHTML 
 }
 
 // ITERATION 4
